@@ -1,0 +1,6 @@
+2020-07-22 20:22:21.904 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id = ? 
+2020-07-22 20:22:21.957 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==> Parameters: 0(Long)
+2020-07-22 20:22:22.002 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - <==      Total: 0
+2020-07-22 20:45:49.359 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id = ? 
+2020-07-22 20:45:49.392 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==> Parameters: 1(Long)
+2020-07-22 20:45:49.417 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - <==      Total: 0
