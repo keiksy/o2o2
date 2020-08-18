@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 
 public interface ProductCategoryService {
-    List<ProductCategory> getProductCategoryList(Long productCategoryId);
+    List<ProductCategory> getProductCategoryList(Long shopId);
 
     ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategoryList)
         throws ProductCategoryOperationException;

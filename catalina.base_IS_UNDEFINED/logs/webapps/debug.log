@@ -1,6 +1,21 @@
-2020-07-22 20:22:21.904 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id = ? 
-2020-07-22 20:22:21.957 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==> Parameters: 0(Long)
-2020-07-22 20:22:22.002 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - <==      Total: 0
-2020-07-22 20:45:49.359 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id = ? 
-2020-07-22 20:45:49.392 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - ==> Parameters: 1(Long)
-2020-07-22 20:45:49.417 [main] DEBUG c.e.d.ProductCategoryDao.queryProductCategoryList - <==      Total: 0
+2020-08-17 11:23:15.332 [main] DEBUG com.example.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-08-17 11:23:15.358 [main] DEBUG com.example.dao.AreaDao.queryArea - ==> Parameters: 
+2020-08-17 11:23:15.380 [main] DEBUG com.example.dao.AreaDao.queryArea - <==      Total: 3
+2020-08-17 16:48:29.893 [main] DEBUG com.example.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-08-17 16:48:29.918 [main] DEBUG com.example.dao.AreaDao.queryArea - ==> Parameters: 
+2020-08-17 16:48:29.940 [main] DEBUG com.example.dao.AreaDao.queryArea - <==      Total: 3
+2020-08-17 16:50:47.402 [main] DEBUG com.example.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-08-17 16:50:47.425 [main] DEBUG com.example.dao.AreaDao.queryArea - ==> Parameters: 
+2020-08-17 16:50:47.459 [main] DEBUG com.example.dao.AreaDao.queryArea - <==      Total: 3
+2020-08-17 16:52:48.551 [main] DEBUG com.example.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-08-17 16:52:48.732 [main] DEBUG com.example.dao.AreaDao.queryArea - ==> Parameters: 
+2020-08-17 16:52:48.904 [main] DEBUG com.example.dao.AreaDao.queryArea - <==      Total: 3
+2020-08-17 16:56:29.160 [main] DEBUG com.example.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2020-08-17 16:56:29.395 [main] DEBUG com.example.dao.AreaDao.queryArea - ==> Parameters: 
+2020-08-17 16:56:29.612 [main] DEBUG com.example.dao.AreaDao.queryArea - <==      Total: 3
+2020-08-17 19:12:26.712 [main] DEBUG c.e.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2020-08-17 19:12:26.737 [main] DEBUG c.e.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testbind(String), s05bse6q2qlb9qblls96s592y55y556s(String)
+2020-08-17 19:12:26.983 [main] DEBUG c.e.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2020-08-17 19:16:18.409 [main] DEBUG com.example.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2020-08-17 19:16:18.445 [main] DEBUG com.example.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-08-17 19:16:18.476 [main] DEBUG com.example.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1

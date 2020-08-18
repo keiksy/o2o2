@@ -15,7 +15,7 @@ public class Product {
     private Date lastEditTime;
     private Integer enableStatus;
 
-    private List<ProductImg> imgList;
+    private List<ProductImg> productImgList;
     private ProductCategory productCategory;
     private Shop shop;
 
@@ -99,12 +99,12 @@ public class Product {
         this.enableStatus = enableStatus;
     }
 
-    public List<ProductImg> getImgList() {
-        return imgList;
+    public List<ProductImg> getProductImgList() {
+        return productImgList;
     }
 
-    public void setImgList(List<ProductImg> imgList) {
-        this.imgList = imgList;
+    public void setProductImgList(List<ProductImg> imgList) {
+        this.productImgList = imgList;
     }
 
     public ProductCategory getProductCategory() {

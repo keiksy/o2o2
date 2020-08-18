@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/shop", method = {RequestMethod.GET})
+@RequestMapping(value = "/shopadmin", method = {RequestMethod.GET})
 public class ShopAdminController {
     @RequestMapping(value = "/shopoperation")
     public String shopOperation() {
@@ -14,16 +14,27 @@ public class ShopAdminController {
 
     @RequestMapping(value = "/shoplist")
     public String shopList() {
-        return "shop/shopoperation";
+        return "shop/shoplist";
     }
 
     @RequestMapping(value = "/shopmanagement")
     public String shopManagement() {
-        return "shop/shoplist";
+        return "shop/shopmanagement";
     }
 
     @RequestMapping(value = "/productcategorymanagement", method = RequestMethod.GET)
     private String productCategoryManage() {
         return "shop/productcategorymanagement";
+    }
+
+    @RequestMapping(value = "/productmanagement")
+    private String productManagement() {
+        return "shop/productmanagement";
+    }
+
+    @RequestMapping(value = "/productoperation")
+    private String productOperation() {
+        System.out.println("111111111111111111");
+        return "shop/productoperation";
     }
 }

@@ -2,6 +2,7 @@ package com.example.service;
 
 import com.example.BaseTest;
 import com.example.Exception.ShopOperationException;
+import com.example.dto.ImageHolder;
 import com.example.dto.ShopExecution;
 import com.example.entity.Area;
 import com.example.entity.PersonInfo;
@@ -59,7 +60,7 @@ public class ShopServiceTest extends BaseTest {
         shop.setEnableStatus(ShopStateEnum.CHECK.getState());
         shop.setAdvice("censoring");
         File shopImg = new File("/Users/cai/desktop/csu.jpeg");
-        ShopExecution se = shopService.addShop(shop, new FileInputStream(shopImg), shopImg.getName());
+        ShopExecution se = shopService.addShop(shop, new ImageHolder(shopImg.getName(), new FileInputStream(shopImg)));
         assertEquals(se.getState(), ShopStateEnum.CHECK.getState());
     }
 }

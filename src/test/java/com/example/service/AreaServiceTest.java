@@ -17,9 +17,13 @@ import static org.junit.Assert.assertEquals;
 public class AreaServiceTest extends BaseTest {
     @Autowired
     private AreaService areaService;
+    @Autowired
+    private CacheService cacheService;
 
     @Test
     public void testQueryArea() {
-        assertEquals(1+1,2);
+        cacheService.removeFromCache(areaService.AREALISTKEY);
+        List<Area> areaList = areaService.getAreaList();
+        System.out.println(areaList.size());
     }
 }

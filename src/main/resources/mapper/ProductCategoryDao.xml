@@ -28,7 +28,7 @@
         delete from
         tb_product_category
         where
-        category_id = #{productCategoryId}
+        product_category_id = #{productCategoryId}
         and shop_id = #{shopId}
     </delete>
 </mapper>
